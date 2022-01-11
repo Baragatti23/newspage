@@ -1,0 +1,75 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+:root{
+   --colorText2: rgb(204, 33, 33);
+   --colorText: rgb(252, 1, 72);
+   --colorText-light: rgba(252, 1, 72,.9);
+   --marges: 30px;
+}
+body{
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #f2f2f2;
+}
+a{
+   color: currentColor;
+   text-decoration: none;
+}
+ol,li,ol{
+   list-style: none;
+}
+.wrapper{
+   margin: auto;
+   width: 92%;
+   max-width: 1300px;
+}
+.button{
+   width: 70%;
+   height: 40px;
+   border: 2px solid #fff;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   font-size: 13px;
+   text-transform: uppercase;
+}
+.button svg{
+   width: 13px;
+   margin-left: 12px;
+}
+.button svg *{
+   fill: #fff;
+}
+.btn{
+   min-width: 120px;
+   height: 45px;
+   font-size: 14px;
+   font-weight: bold;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 60px;
+}
+.btn-shop-now{
+   background-color: var(--colorText);
+   color: #fff;
+   padding: 25px 30px;
+   text-transform: uppercase;
+}
+.traite{
+   position: relative;
+   display: inline-block;
+}
+.traite::before{
+   content: "";
+   width: 100%;
+   display: block;
+   height: 4px;
+   background-color: #111;
+   position: absolute;
+}

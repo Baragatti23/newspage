@@ -1,0 +1,248 @@
+.wrap{
+   width: 800px;
+   margin: 80px auto;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 0 3px 0 rgba(0,0,0,.15), 5px 0px 1px 0 rgba(0,0,0,.05), 0 5px 3px 0 rgba(0,0,0,.1);
+   background: #fff;
+   position: relative;
+}
+.wrap .flex{
+   display: flex;
+}
+.wrap .wrap-form,.wrap .baner{
+   width: 50%;
+}
+.wrap .wrap-form{
+   padding: 40px 50px;
+   position: relative;
+}
+.wrap .wrap-form h2{
+   color: rgb(55, 76, 89);
+   margin-bottom: 15px;
+   text-align: center;
+   text-align: center;
+   font-size: 1.8em;
+}
+.wrap .wrap-form .socials{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 15px;
+   width: 100%;
+}
+.wrap .wrap-form .socials .item{
+   width: 36px;
+   height: 36px;
+   overflow: hidden;
+   border: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid rgb(219, 220, 224);
+   border-radius: 50%;
+   margin-right: 20px;
+}
+.wrap .wrap-form .socials svg{
+   width: 20px;
+   position: static;
+}
+.wrap .wrap-form .socials svg path{
+   fill: rgb(40, 53, 61);
+}
+.wrap .wrap-form .text_label{
+   font-size: .875rem;
+   text-align: center;
+   margin-bottom: 20px;
+   color: rgb(105, 116, 119);
+}
+.wrap .wrap-form .text_label .color{
+   color: rgb(223, 42, 152);
+}
+.wrap .wrap-form .text_label .color>span{
+   padding-bottom: 2px;
+   border-bottom: 2px solid rgb(223, 42, 152);
+}
+.wrap .wrap-form form .input-check{
+   margin-bottom: 23px;
+   font-size: .875rem;
+   color: rgba(55, 76, 89,.9);
+}
+.wrap .wrap-form form .input-check input{
+   display: none;
+}
+.wrap .wrap-form form .input-check label{
+   display: block;
+   position: relative;
+   --color: rgba(223, 42, 152,.25);
+   --color2: rgba(223, 42, 152,.15);
+   padding-left: 4px;
+}
+.wrap .wrap-form form .input-check input:checked + label{
+   --color: rgb(223, 42, 152);
+   --color2: var(--color);
+}
+.wrap .wrap-form form .input-check label::before{
+   content: "";
+   display: inline-block;
+   width: 9px;
+   height: 9px;
+   border-radius: 50%;
+   background:var(--color2);
+   box-shadow: 0 0 0 2.5px #fff, 0 0 0 4.5px var(--color);
+   margin-right: 12px;
+}
+.wrap .wrap-form .input-group{
+   margin-bottom: 20px;
+}
+.wrap .wrap-form input[type=text], .wrap .wrap-form textarea{
+   padding: 10px 15px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   border-radius: 3px;
+   outline: none;
+   transition: border .3s ease;
+   font-size: .8125rem;
+   color: rgb(38,38,38);
+   background: rgb(250,250,250);
+   border: 1px solid rgba(0,0,0,.075);
+}
+.wrap .wrap-form input[type=text]:focus, .wrap .wrap-form textarea:focus{
+   border-color: rgba(51, 99, 255,.5);
+    box-shadow: 0 0 0 1px rgb(62 158 254), 0 0 0 4px rgb(177 214 252);
+}
+.wrap .wrap-form .float{
+   display: flex;
+   position: absolute;
+   right: 0;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   background-color: #fff;
+   top: 50%;
+   transform: translateX(50%) translateY(-50%);
+   box-shadow: 0 0 1px 1px rgba(0,0,0,.2);
+   z-index: 1;
+   align-items: center;
+   justify-content: center;
+}
+.wrap .wrap-form .float svg{
+   width: 17px;
+   transform: rotate(180deg);
+}
+.wrap .wrap-form .float svg path{
+   fill: rgb(211, 51, 171);
+}
+.wrap .wrap-form textarea{
+   height: 80px;
+   resize: none;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.wrap .buts{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   position: relative;
+}
+.wrap .buts svg{
+   width: 17px;
+   position: absolute;
+   left: calc(50% - 45px);
+   top: 11px;
+   cursor: pointer;
+}
+.wrap .buts svg path{
+   fill: #fff;
+}
+.wrap .buts input{
+   width: 150px;
+   padding-left: 9px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 42px;
+   border: none;
+   background: rgb(255, 69, 80) ;
+   border-radius: 70px;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 12px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   background: linear-gradient(to right,rgb(254, 18, 100),rgb(194, 65, 200));
+}
+.wrap .buts input[type=reset]{
+   background: rgba(235,235,235);
+   color: rgb(55, 76, 89,.5);
+   margin-bottom: 0;
+   background: linear-gradient(to right ,rgba(255,255,255,.75),rgba(255,255,255,.99));
+   width: 130px;
+   color: rgb(243, 65, 97);
+   height: 38px;
+   padding-left: 0;
+}
+.wrap .buts.absolute{
+   position: absolute;
+   left: 100%;
+   width: 100%;
+   bottom: 130px;
+   z-index: 1;
+}
+.wrap .wrap-form .buts .socials{
+   margin-top: 25px;
+}
+.wrap .wrap-form .buts .socials .item{
+   border: none;
+   border-radius: 3px;
+   background: rgba(0,0,0,.15);
+   width: 31px;
+   height: 31px;
+   margin-right: 15px;
+   margin-top: 5px;
+}
+.wrap .wrap-form .buts .socials .item:last-child{
+   margin-right: 0;
+}
+.wrap .wrap-form .buts .socials .item svg{
+      width: 15px;
+}
+.wrap .wrap-form .buts .socials .item svg path{
+   fill: #fff;
+}
+.wrap .baner{
+   height: 100%;
+   background: rgb(255, 69, 80);
+   background: linear-gradient(to right top,rgb(253, 67, 147),rgb(255, 69, 80));
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+.wrap .baner .text{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 90%;
+   text-align: center;
+   color: #fff;
+   transform: translateX(-50%) translateY(calc(-50% - 75px));
+}
+.wrap .baner .text h2{
+   color: #fff;
+   font-size: 2.2em;
+   font-weight: bold;
+   margin-bottom: 10px;
+   text-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+.wrap .baner .text p{
+   font-size: 15px;
+   line-height: 24px;
+   width: 75%;
+   margin: auto;
+   color: rgba(255,255,255,.85);;
+}
+.wrap .baner .text h2 span{
+   font-weight: normal;
+   font-size: 1.25rem;
+}
